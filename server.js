@@ -8,6 +8,6 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
-app.listen(4000, function(){
+app.listen(process.env.PORT, function(){
     console.log("Node running on port 4k");
 });
