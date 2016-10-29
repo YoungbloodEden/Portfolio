@@ -9,5 +9,7 @@ app.get('/', function(req, res){
 });
 
 app.listen(process.env.PORT, function(){
-    console.log("Node running on port 4k");
+  console.log("++++++++++++++++++++++++++++++++++")
+  console.log("Node running on port "+process.env.PORT);
+  console.log("++++++++++++++++++++++++++++++++++")
 });
