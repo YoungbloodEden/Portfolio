@@ -1,13 +1,14 @@
 var express = require('express');
 var app     = express();
 var path    = require('path');
-var port    = process.env.PORT || 3000
+var favicon = require('serve-favicon');
+var port    = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname,'public')));
 
 app.use('/scripts', express.static(__dirname + '/bower_components'))
 
-app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(path.join(__dirname,'public','favicon.ico')))
 
 app.all('/*', function(req, res, next) {
   res.sendFile('/public/index.html', { root: __dirname });
