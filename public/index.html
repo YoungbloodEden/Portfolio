@@ -25,6 +25,16 @@
           <li><a ui-sref="projects" ui-sref-active="active">My Projects</a></li>
           <li><a ui-sref="contact" ui-sref-active="active">Contact Me</a></li>
         </ul>
+        <ul class="left hide-on-large-only">
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Nav<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+
+        <ul id="dropdown1" class="dropdown-content ">
+          <li><a ui-sref="projects">My Projects</a></li>
+          <li><a ui-sref="contact">Contact Me</a></li>
+          <li class="divider"></li>
+          <li><a ui-sref="home">Home</a></li>
+        </ul>
       </div>
       </nav>
       </div>
@@ -32,4 +42,9 @@
     <main ui-view></main>
   </body>
   <footer class="blue-grey darken-3 white-text page-footer" style="position:fixed;width:100%;bottom:0;z-index:0;">©Adam Youngblood 2016</footer>
+  <script>
+  $(document).ready(function(){
+    $(".dropdown-button").dropdown();
+  })
+  </script>
 </html>
