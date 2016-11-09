@@ -2,6 +2,7 @@
 <html ng-app="ProfileSite">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Adam Youngblood</title>
     <script src="scripts/jquery/dist/jquery.min.js"></script>
     <script src="scripts/angular/angular.min.js"></script>
@@ -11,17 +12,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="scripts/materialize/dist/css/materialize.min.css">
     <script src="scripts/materialize/dist/js/materialize.min.js"></script>
-    <link rel="apple-touch-icon-precomposed" href="./favicon.ico" />
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
-  <body ng-controller="MainController as main">
+  <body ng-controller="MainController as main" class="blue-grey darken-1">
     <header>
       <div class="navbar-fixed">
-      <nav class='blue-grey darken-2'>
+      <nav class='blue-grey darken-4'>
         <div class="nav-wrapper">
         <a class="brand-logo">Adam Youngblood</a>
         <ul class="left hide-on-med-and-down">
           <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
-          <li><a ui-sref="about" ui-sref-active="active">About Me</a></li>
           <li><a ui-sref="projects" ui-sref-active="active">My Projects</a></li>
           <li><a ui-sref="contact" ui-sref-active="active">Contact Me</a></li>
         </ul>

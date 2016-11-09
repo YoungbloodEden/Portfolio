@@ -21,10 +21,6 @@
           url: '/contact',
           templateUrl: 'contact.html'
         })
-        .state('about', {
-          url: '/about',
-          templateUrl: 'about.html'
-        })
 
         $locationProvider.html5Mode({
           enabled: true,
