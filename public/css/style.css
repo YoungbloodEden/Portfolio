@@ -19,11 +19,13 @@ a:hover {
 .pipe {
   color: white;
 }
-nav.bar a.active {
+a.active {
   color: red;
-}nav.bar a.active:hover {
+}
+a.active:hover {
   color: white;
 }
+
 .brand {
   background-color: #3d4047;
   width: 35%;
