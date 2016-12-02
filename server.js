@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 app.use('/scripts', express.static(__dirname + '/bower_components'))
 
-app.get('/.well-known/acme-challenge/VakPosMfm69xYuY83z-0ZQfkgdRUgjHktaVpdotElFw.22EMFKUX8piP_SxRePAiQWKA8lAly-1jhmIggcizTfs', function(req, res){
+app.get('/.well-known/acme-challenge/VakPosMfm69xYuY83z-0ZQfkgdRUgjHktaVpdotElFw', function(req, res){
 res.render("VakPosMfm69xYuY83z-0ZQfkgdRUgjHktaVpdotElFw.22EMFKUX8piP_SxRePAiQWKA8lAly-1jhmIggcizTfs")
 });
 
