@@ -11,15 +11,15 @@
       $stateProvider
         .state('home', {
           url: '/home',
-          templateUrl: 'home.html'
+          templateUrl: '../home.html'
         })
         .state('projects', {
           url: '/projects',
-          templateUrl: 'projects.html'
+          templateUrl: '../projects.html'
         })
         .state('contact', {
           url: '/contact',
-          templateUrl: 'contact.html'
+          templateUrl: '../contact.html'
         })
 
         $locationProvider.html5Mode({
