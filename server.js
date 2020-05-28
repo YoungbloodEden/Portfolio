@@ -16,6 +16,6 @@ app.all('/*', function(req, res, next) {
 
 app.listen(port, function(){
   console.log("++++++++++++++++++++++++++++++++++")
-  console.log("    Node running on port "+port);
+  console.log("Node running on port "+port);
   console.log("++++++++++++++++++++++++++++++++++")
 });
